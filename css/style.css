@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color:#847971;
+  font-weight:300;
+  font-size:1.5rem;
+  line-height:2.8rem;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color:#333092;
+  font-size:2.25rem;
+  margin-bottom:2rem;
+}
+h2.container, h1 {
+  font-size:2.6rem;
+}
+h3 {
+  color:#5091cd;
+  font-size:2.35rem;
+  margin-top:2rem;
+}
+/* header styles */
+a.nav-link {
+  font-weight:700;
+  color:#333092;
+  padding:0;
+  border-top:4px solid transparent;
+  font-size:1.2rem;
+}
+.nav-link:focus, .nav-link:hover {
+    color:#333092;
+    border-top:4px solid #b0b91d;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-expand-lg .navbar-collapse {
+    margin-top: 2.2rem;
+    margin-left: 3rem;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51,48,146,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.banner {
+  background-image:url(../images/hotair-balloon.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  min-height:43.438rem;
+  margin-bottom:5rem;
+}
+.workbanner {
+  background-image:url(../images/balloon-sky.jpg);
+  background-position:top;
+  background-size:cover;
+  background-attachment: fixed;
+  min-height:43.438rem;
+  margin-bottom:5rem;
+}
+.teambanner {
+  min-height:43.438rem;
+  margin-bottom:5rem;
+  background-color:#d7e1f3;
+  padding-top:4rem;
+}
+.workbanner h1 {
+  color:white;
+  margin-bottom:4rem;
+}
+/* main styles */
+section {
+  margin-top:4rem;
+}
+.intro {
+  font-size:30px;
+}
+.teamhead {
+  color:#d18316;
+}
+.connecthead {
+  color:#b0b91d;
+}
+.material-icons {
+  color:#333092;
+  padding:0 1rem;
+}
+.cvr {
+    display: block;
+    padding-right: 2rem;
+}
+#connect .material-icons {
+  color:#fff;
+  font-size:8rem;
+  text-shadow: 1px 1px 6px #999;
+  padding:0;
+}
+#connect {
+  background-color:#f8f6ed;
+  padding:4rem 0;
+  clear: both;
+}
+#connect a {
+  text-decoration: none;
+  color:#847971;
+}
+main > h2:nth-child(3) {
+  color:#5090cd;
+}
+footer {
+  font-size:1rem;
+  padding:2rem 0;
+}
+footer p {
+  padding:0 1rem;
+}
+footer .fa {
+  font-size:1.5rem;
+  padding:0 .5rem;
+}
+footer a {
+  color:#847971;
+}
+footer a:hover {
+  color:#333092;
+}
+/* team styles */
+figcaption, figcaption .material-icons {
+  font-size:1rem;
+  line-height: 1.2rem;
+  padding:.5rem 0
+}
+figure {
+  padding-right:20px;
+}
