@@ -1,4 +1,7 @@
 @charset "utf-8";
+:root {
+  --animate-delay: 0.5s;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -76,6 +79,7 @@ a.nav-link {
 /* main styles */
 section {
   margin-top:4rem;
+  position:relative;
 }
 .intro {
   font-size:30px;
@@ -137,4 +141,95 @@ figcaption, figcaption .material-icons {
 }
 figure {
   padding-right:20px;
+  overflow: hidden;
+}
+.co_anime {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size:20rem;
+  color:white;
+  opacity:.8;
+}
+.lrgthat {
+  color:white;
+  font-size:10rem;
+  font-weight:700;
+  line-height: 10rem;
+  position:relative;
+  z-index: 1;
+}
+.co {
+  font-family: 'Poppins', sans-serif;
+  font-size:15rem;
+  font-weight:900;
+  letter-spacing: -1rem;
+  position: relative;
+  left:30%;
+}
+.co span:nth-child(1){
+  color:#b0b91d;
+}
+.co span:nth-child(2){
+  color:#d18316;
+}
+/* bio styles */
+.bio_hide {
+  display:none !important;
+}
+.bio_show {
+position: absolute;
+background-color:white;
+top:0;
+left:0;
+right:0;
+bottom:0;
+z-index:10;
+display:block;
+transition:all .8s;
+  transform: rotateY(180deg);
+}
+.biobox {
+  position:relative;
+  z-index:10;
+}
+/* flipcard */
+.flip-card {
+  background-color: transparent;
+  width: 460px;
+  height: 460px;
+  perspective: 900px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  font-size:1.2rem;
+  line-height:2rem;
+}
+.work-titles {
+  font-weight: 700;
 }
