@@ -1,7 +1,4 @@
 @charset "utf-8";
-:root {
-  --animate-delay: 0.5s;
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -150,7 +147,8 @@ figure {
   color:white;
   opacity:.8;
     letter-spacing: -1.2rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,.5)
+  text-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  animation-delay:.5s;
 }
 .lrgthat {
   color:white;
